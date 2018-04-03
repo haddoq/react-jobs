@@ -7,7 +7,7 @@
 		exports["ReactJobs"] = factory(require("react"), require("prop-types"));
 	else
 		root["ReactJobs"] = factory(root["React"], root["PropTypes"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE_0__, __WEBPACK_EXTERNAL_MODULE_1__) {
+})(typeof self !== 'undefined' ? self : this, function(__WEBPACK_EXTERNAL_MODULE_0__, __WEBPACK_EXTERNAL_MODULE_1__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -240,8 +240,8 @@ function withJob(config) {
 
 
       _createClass(ComponentWithJob, [{
-        key: 'asyncBootstrap',
-        value: function asyncBootstrap() {
+        key: 'bootstrap',
+        value: function bootstrap() {
           if (env === 'browser') {
             // No logic for browser, just continue
             return true;

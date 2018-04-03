@@ -84,8 +84,8 @@ function withJob(config) {
 
 
       _createClass(ComponentWithJob, [{
-        key: 'asyncBootstrap',
-        value: function asyncBootstrap() {
+        key: 'bootstrap',
+        value: function bootstrap() {
           if (env === 'browser') {
             // No logic for browser, just continue
             return true;
